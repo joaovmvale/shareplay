@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UserRegisterController</servlet-name>
+        <servlet-class>controller.UserRegisterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserLoginController</servlet-name>
+        <servlet-class>controller.UserLoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserRegisterController</servlet-name>
+        <url-pattern>/UserRegisterController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserLoginController</servlet-name>
+        <url-pattern>/UserLoginController</url-pattern>
+    </servlet-mapping>
+</web-app>
