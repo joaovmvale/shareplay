@@ -3,6 +3,7 @@ package controller;
 import dao.UserLoginDAO;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpSession;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -23,6 +24,10 @@ public class UserLoginController extends HttpServlet {
 
         UserLoginDAO udao = new UserLoginDAO();
         JSONArray jsonArray = udao.loginUser(u);
+        
+        if (jsonArray != null){
+            request.getSession().setAttribute("email", request.getParameter("user-login"));
+        }
         
         response.setContentType("application/json");
         

@@ -9,6 +9,8 @@ $(document).ready(function (){
         
         if (fValidateForm() == true){
             fServerComunnication();
+        } else {
+            window.location.reload(true);
         }
         
         return false;
@@ -40,15 +42,19 @@ function fServerComunnication() {
 }
 
 function fValidateForm() {
-    var a = document.forms['form-login']['email-register'].value;
-    var b = document.forms['form-login']['password-register'].value;
-    var c = document.forms['form-login']['ps-confirmation-register'].value;
-    var d = document.forms['form-login']['name-register'].value;
-    var e = document.forms['form-login']['date-register'].value;
+    var campos = $("#form-register").serializeArray();
     
-    if (a == "" || b == "" || c == "" || d == "" || e == ""){
-        alert("Por favor, preencha todos os campos.");
+    for (let i = 0; i < campos.length; i++){
+        if(campos[i].value == ""){
+            alert("Por favor, preencha todos os campos!");
+            return false;
+        }
+    }
+    
+    if(campos[1].value != campos[2].value){
+        alert("As senhas devem ser iguais!");
         return false;
     }
+    
     return true;
 }

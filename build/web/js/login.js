@@ -9,7 +9,6 @@ $(document).ready(function (){
         if (fValidateForm() == true){
             fServerComunnication();
         }
-        
         return false;
     });
 
@@ -36,19 +35,20 @@ function fServerComunnication() {
                 alert(evt[0]["name"]);
                 localStorage.setItem("user", JSON.stringify(evt[0]));
                 alert("Seja bem-vindo!");
-                window.location.href = "../home"
+                window.location.href = "../home";
             }
 
         });
 }
 
 function fValidateForm() {
-    var a = document.forms['form-login']['user-login'].value;
-    var b = document.forms['form-login']['password-login'].value;
+    var campos = $("#form-login").serializeArray();
     
-    if (a == "" || b == ""){
-        alert("Por favor, preencha todos os campos.");
-        return false;
+    for (let i = 0; i < campos.length; i++){
+        if(campos[i].value == ""){
+            alert("Por favor, preencha todos os campos!")
+            return false;
+        }
     }
     return true;
 }
