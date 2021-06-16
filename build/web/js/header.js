@@ -36,7 +36,11 @@ $(document).ready(function(){
             url: "../../UserDisconnectController"
     
         });
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> login
         window.location.reload(true);
 
     });
