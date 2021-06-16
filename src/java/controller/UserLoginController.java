@@ -26,7 +26,7 @@ public class UserLoginController extends HttpServlet {
         JSONArray jsonArray = udao.loginUser(u);
         
         if (jsonArray != null){
-            request.getSession().setAttribute("email", request.getParameter("user-login"));
+            request.getSession().setAttribute("id", request.getParameter("user-login"));
         }
         
         response.setContentType("application/json");

@@ -8,6 +8,50 @@
         <servlet-name>UserLoginController</servlet-name>
         <servlet-class>controller.UserLoginController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PodcastsLoadingController</servlet-name>
+        <servlet-class>controller.PodcastsLoadingController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetUserDataController</servlet-name>
+        <servlet-class>controller.GetUserDataController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserDisconnectController</servlet-name>
+        <servlet-class>controller.UserDisconnectController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LivePodcastsLoadingController</servlet-name>
+        <servlet-class>controller.LivePodcastsLoadingController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LiveTrendingPodcastsLoadingController</servlet-name>
+        <servlet-class>controller.LiveTrendingPodcastsLoadingController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetPodcastPageController</servlet-name>
+        <servlet-class>controller.GetPodcastPageController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetTransmissionController</servlet-name>
+        <servlet-class>controller.GetTransmissionController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreatePodcastController</servlet-name>
+        <servlet-class>controller.CreatePodcastController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetUserPodcastsController</servlet-name>
+        <servlet-class>controller.GetUserPodcastsController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SubscribeController</servlet-name>
+        <servlet-class>controller.SubscribeController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetSubscriptionsController</servlet-name>
+        <servlet-class>controller.GetSubscriptionsController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>UserRegisterController</servlet-name>
         <url-pattern>/UserRegisterController</url-pattern>
@@ -15,5 +59,49 @@
     <servlet-mapping>
         <servlet-name>UserLoginController</servlet-name>
         <url-pattern>/UserLoginController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PodcastsLoadingController</servlet-name>
+        <url-pattern>/PodcastsLoadingController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetUserDataController</servlet-name>
+        <url-pattern>/GetUserDataController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserDisconnectController</servlet-name>
+        <url-pattern>/UserDisconnectController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LivePodcastsLoadingController</servlet-name>
+        <url-pattern>/LivePodcastsLoadingController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LiveTrendingPodcastsLoadingController</servlet-name>
+        <url-pattern>/LiveTrendingPodcastsLoadingController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetPodcastPageController</servlet-name>
+        <url-pattern>/GetPodcastPageController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetTransmissionController</servlet-name>
+        <url-pattern>/GetTransmissionController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreatePodcastController</servlet-name>
+        <url-pattern>/CreatePodcastController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetUserPodcastsController</servlet-name>
+        <url-pattern>/GetUserPodcastsController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SubscribeController</servlet-name>
+        <url-pattern>/SubscribeController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSubscriptionsController</servlet-name>
+        <url-pattern>/GetSubscriptionsController</url-pattern>
     </servlet-mapping>
 </web-app>

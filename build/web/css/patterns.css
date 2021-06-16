@@ -2,9 +2,9 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, sub, li,sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, ul,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -26,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+        background-color: #0e0e10;
 	line-height: 1;
 }
 
@@ -48,5 +50,207 @@ table {
 }
 
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	list-style-type: none;
 	box-sizing: border-box;
+	--header-height: 60px;
+	text-decoration: none;
 }
+
+header{
+	
+    width: 100%;
+    height: var(--header-height);
+    background-color: #18181b;
+    display: flex;
+    align-items: center;
+    padding: 0 80px 0 80px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 1px 0 3px black;
+    
+}
+
+.logo{
+
+   min-width: 90px;
+   width: 90px;
+   height: 50px;
+   margin-right: 4%;
+
+}
+
+.logo img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.menu-options{
+
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-options a{
+    padding: 15px;
+	color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu-options-compact{
+
+    display: none;
+    font-size: 25px;
+    margin-right: 5px;
+
+}
+
+.search-div{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 7%;
+}
+
+#search-input{
+
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: min(400px, 40vw);
+    background-color: #464649;
+    color: #8b8b8d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+}
+
+
+#search-input:focus{
+
+    outline: 1px solid #9147ff;
+    background-color: black;
+    transition: background-color .6s;
+
+}
+
+#search-button{
+
+    position: absolute;
+    right: 0;
+    padding: 11px;
+    background-color: #29292c;
+    color: #5b5b5d;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: not-allowed;
+}
+
+#search-button-compact{
+
+    display: none;
+    margin-right: 10px;
+
+}
+
+.last-icons{
+
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+
+}
+
+.last-icons *{
+
+    padding: 5px;
+    color: white;
+
+}
+
+.last-icons > *:hover{
+
+    cursor: pointer;
+    color:#9147ff;
+
+}
+
+.dropdown-menu{
+
+    border-top: 5px solid olivedrab;
+    display: none;
+    background-color: #18181b;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 130%;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    cursor: default !important;
+    box-shadow: 1px 1px 3px black;
+}
+
+.dropdown-user-info{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#dropdown-user-picture{
+
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+}
+
+.dropdown-user-icons{font-size: 14px;}
+
+.dropdown-user-icons a{display: flex;}
+
+.dropdown-user-icons a:hover *{
+    cursor: pointer;
+    color: #9147ff;
+}
+
+#dropdown-username{font-size: 16px;}
+
+.dropdown-option{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+}
+
+.dropdown-option:hover *{ color: rgb(207, 207, 207);}
+
+.dropdown-option i{ margin-right: 5px;}
+
+@media (max-width: 1050px){
+    header{padding: 0 60px 0 30px;}
+    .logo{margin-right: 10%;}
+    .user{ margin: 0; }
+    .menu-options{display: none;}
+    .menu-options-compact{ display: block;}
+}
+
+@media (max-width: 450px){
+    header{padding: 0 10px 0 30px;}
+    .search-div{display: none;}
+    #search-button-compact{display: block;}
+
+}
+
+

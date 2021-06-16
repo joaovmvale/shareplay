@@ -31,8 +31,8 @@ function fServerComunnication() {
                 window.location.reload(true);
             }
             else{
-                alert(evt[0]["id"]);
-                alert(evt[0]["name"]);
+                //alert(evt[0]["id"]);
+                //alert(evt[0]["name"]);
                 localStorage.setItem("user", JSON.stringify(evt[0]));
                 alert("Seja bem-vindo!");
                 window.location.href = "../home";

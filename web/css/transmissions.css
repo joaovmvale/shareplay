@@ -1,0 +1,48 @@
+.podcast-card{
+
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.transmission-card{
+
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.podcast-img{position: relative;}
+
+
+.transmission-img:hover{transform: scale(1.01);}
+.podcast-img:hover{transform: scale(1.01);}
+
+.podcast-img img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.live{
+
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 3px;
+    position: absolute;
+    margin: 10px;
+    font-size: 13px;
+    z-index: 3;
+
+}
+
+.transmission-title{
+
+    color: white;
+    margin-bottom: 10px;
+
+}
