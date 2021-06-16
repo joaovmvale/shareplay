@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SharePlay</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/patterns.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/podcast.css'>
+    <script src='https://code.jquery.com/jquery-3.6.0.js'></script>
+    <script src='../../js/header.js'></script>
+    <script src='../../js/podcast.js'></script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="../home/"><img src='../../images/logo.png'></a>
+        <div class="menu-options">
+            <a href="../trending/">Em alta</a>
+            <a href="../user_subscriptions/">Minhas Inscrições</a>
+        </div>
+        <div class="search-div">
+            <input id="search-input" type="text" placeholder="Pesquisar">
+            <i class="fas fa-search" id="search-button"></i>
+        </div>
+        <div class="last-icons">
+            <i class="fas fa-search" id="search-button-compact"></i>
+            <i class="fas fa-bars menu-options-compact"></i>
+            <i class="far fa-user user"></i>
+
+            <div class="dropdown-menu">
+                <div class="dropdown-user-info">
+                    <img id="dropdown-user-picture" src="">
+                    <div class="dropdown-user-icons">
+                        <p id="dropdown-username"></p>
+                        <a href="../user_config/">
+                            <i class="far fa-edit"></i>
+                            <p>Editar perfil</p>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../shareplay_studio/" class="dropdown-option" id="shareplay-studio"><i class="fas fa-microphone-alt"></i><p>Shareplay Studio</p></a>
+                <div class="dropdown-option" id="leave"><i class="fas fa-sign-out-alt"></i><p>Sair</p></div>
+                
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <div class="section podcast-view">
+            <div class="podcast-participants">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwnj_XDhys5LPZHvra31I-IwDq9ZFbUMA55Z-xQXwcw=s900-c-k-c0x00ffffff-no-rj" class="podcast-participant">
+                <img src="http://pm1.narvii.com/7778/390d5f24446df85d91d1b2bc774d332a4f88524br1-554-553v2_00.jpg" class="podcast-participant">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwnjLk2ohynJ3vNjtQUZyCajFUNKhf9se3PgR8caKupo=s900-c-k-c0x00ffffff-no-rj" class="podcast-participant">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Gabriel_Monteiro_PM.png" class="podcast-participant">
+            </div>
+        </div>
+
+        <div class="section podcast-chat">
+            <div class="messages"></div>
+            <input type="text" placeholder="Envie uma mensagem" id="message-input">
+            <button id="send-message">Enviar</button>
+        </div>
+
+    </main>
+
+    <div class="informations">
+        <div class="informations-section transmission-information">
+            <div class="ti transmission-information-left">
+                <p class="transmission-title"></p>
+                <p class="transmission-viewers"></p>
+            </div>
+
+            <div class="ti transmission-information-right">
+                <div class="like-button">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p class="likes"></p>
+                </div>
+                <div class="deslike-button">
+                    <i class="fas fa-thumbs-down"></i>
+                    <p class="deslikes"></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="informations-section podcast-information">
+            <div class="podcast-information-left">
+                <div class="podcast-channel">
+                    <img class="podcast-channel-image" src="">
+                    <div class="podcast-channel-information">
+                        <a class="podcast-channel-name"></a>
+                        <p class="podcast-channel-subscribers"></p>
+                    </div>
+                </div>
+
+                <p class="transmission-description"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

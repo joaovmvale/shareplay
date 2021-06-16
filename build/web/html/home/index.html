@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SharePlay</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="sortcut icon" href="/view/images/mic.png" type="image/x-icon" />
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/patterns.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/podcasts.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/transmissions.css'>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/home.js"></script>
+    <script src="../../js/transmissions.js"></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="../home/"><img src='../../images/logo.png'></a>
+        <div class="menu-options">
+            <a href="../trending/">Em alta</a>
+            <a href="../user_subscriptions/">Minhas Inscrições</a>
+        </div>
+        <div class="search-div">
+            <input id="search-input" type="text" placeholder="Pesquisar">
+            <i class="fas fa-search" id="search-button"></i>
+        </div>
+        <div class="last-icons">
+            <i class="fas fa-search" id="search-button-compact"></i>
+            <i class="fas fa-bars menu-options-compact"></i>
+            <i class="far fa-user user"></i>
+
+            <div class="dropdown-menu">
+                <div class="dropdown-user-info">
+                    <img id="dropdown-user-picture" src="">
+                    <div class="dropdown-user-icons">
+                        <p id="dropdown-username"></p>
+                        <a href="../user_config/">
+                            <i class="far fa-edit"></i>
+                            <p>Editar perfil</p>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../shareplay_studio/" class="dropdown-option" id="shareplay-studio"><i class="fas fa-microphone-alt"></i><p>Shareplay Studio</p></a>
+                <div class="dropdown-option" id="leave"><i class="fas fa-sign-out-alt"></i><p>Sair</p></div>
+                
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="podcasts">
+
+
+        </div>
+
+    </main>
+
+</body>
+</html>
