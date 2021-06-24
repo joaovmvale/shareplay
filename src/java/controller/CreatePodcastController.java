@@ -15,8 +15,8 @@ public class CreatePodcastController extends HttpServlet {
             throws ServletException, IOException {
         
         PodcastModel mod = new PodcastModel();
-        //String userID = (String) request.getSession().getAttribute("user-id");
-        mod.setUser_id("1");
+        String userID = (String) request.getSession().getAttribute("user-id");
+        mod.setUser_id(userID);
         mod.setName(request.getParameter("name"));
         mod.setAbout(request.getParameter("about"));
         mod.setCategory(request.getParameter("category"));

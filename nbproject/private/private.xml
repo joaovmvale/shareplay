@@ -3,23 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/CreatePodcastController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/GetPodcastPageController.java</file>
             <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/GetUserDataController.java</file>
             <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/GetUserPodcastsController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/dao/PodcastsLoadingDAO.java</file>
             <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/dao/ConnectionDB.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/web/css/patterns.css</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/UserDisconnectController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/UserRegisterController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/GetSubscriptionsController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/PodcastsLoadingController.java</file>
+            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/dao/PodcastsLoadingDAO.java</file>
             <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/GetTransmissionController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/LivePodcastsLoadingController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/SubscribeController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/LiveTrendingPodcastsLoadingController.java</file>
+            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/dao/GetPodcastPageDAO.java</file>
+            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/dao/GetTransmissionDAO.java</file>
+            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/web/js/login.js</file>
+            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/GetSubscriptionsController.java</file>
             <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/CheckLoginStatusController.java</file>
-            <file>file:/C:/Users/user/Documents/Projetos%20Java/shareplay/src/java/controller/UserLoginController.java</file>
         </group>
     </open-files>
 </project-private>

@@ -25,9 +25,4 @@ public class UserLoginModel {
     public void setPassword(String password) {
         this.password = password;
     }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> login
 }

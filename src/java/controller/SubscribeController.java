@@ -14,19 +14,17 @@ public class SubscribeController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //String userID = (String) request.getSession().getAttribute("userID");
+        String userID = (String) request.getSession().getAttribute("user-id");
         String podcastID = request.getParameter("podcastID");
         
         SubscribeDAO dao = new SubscribeDAO();
         try {
-            if(!dao.getStatus("1", podcastID).next())
-                dao.subscribe("1", podcastID);
+            if(!dao.getStatus(userID, podcastID).next())
+                dao.subscribe(userID, podcastID);
             else
-                dao.unsubscribe("1", podcastID);
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        
+                dao.unsubscribe(userID, podcastID);
+        } catch (SQLException ex) {}
+       
 
     }
 }

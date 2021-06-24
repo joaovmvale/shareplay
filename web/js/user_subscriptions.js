@@ -10,6 +10,10 @@ $(document).ready(function (){
 
     $.when(request).done(function(evt){
 
+        if(evt.length == 0){
+            $(".error-message").css("display", "flex");
+        }
+
         for(let i = 0; i < evt.length; i++){
             let card = '';
             card += '<a href="../podcast_page/?=' + evt[i]["id"] + '" class="podcast-card">'

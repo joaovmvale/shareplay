@@ -15,8 +15,8 @@ public class GetUserPodcastsController extends HttpServlet {
             throws ServletException, IOException {
         
         GetUserPodcastsDAO u = new GetUserPodcastsDAO();
-        //String userID = (String) request.getSession().getAttribute("userID");
-        JSONArray jsonArray = u.getPodcasts("1");
+        String userID = (String) request.getSession().getAttribute("user-id");
+        JSONArray jsonArray = u.getPodcasts(userID);
         
         response.setContentType("application/json");
         response.getWriter().write(jsonArray.toString());

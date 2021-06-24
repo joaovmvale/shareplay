@@ -21,7 +21,7 @@ public class LiveTrendingPodcastsLoadingDAO {
         try
         {
             query = "SELECT live_podcasts.*, podcasts.name FROM live_podcasts, podcasts"
-                    + " WHERE live_podcasts.podcast_id = podcasts.id GROUP BY viewers LIMIT 15";
+                    + " WHERE live_podcasts.podcast_id = podcasts.id ORDER BY viewers DESC LIMIT 9";
             ps = con.getConnectionDB().prepareStatement(query);
 
             return convertToJSON(ps.executeQuery());

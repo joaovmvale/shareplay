@@ -15,10 +15,10 @@ public class GetSubscriptionsController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        //String userID = (String) request.getSession().getAttribute("userID");
+        String userID = (String) request.getSession().getAttribute("user-id");
 
         GetSubscriptionsDAO dao = new GetSubscriptionsDAO();
-        JSONArray jsonArray = dao.getInformation("1");
+        JSONArray jsonArray = dao.getInformation(userID);
         
         response.setContentType("application/json");
         response.getWriter().write(jsonArray.toString());

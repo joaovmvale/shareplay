@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> login
 package dao;
 
 import java.sql.PreparedStatement;
@@ -24,23 +20,12 @@ public class UserLoginDAO {
     {
         try
         {
-<<<<<<< HEAD
-            query = "SELECT id FROM users WHERE (name = ? or email = ?) and password = ?";
-            ps = con.getConnectionDB().prepareStatement(query);
-            ps.setString(1, u.getUser());
-            ps.setString(2, u.getUser());
-            ps.setString(3, u.getPassword());
-
-            return convertToJSON(ps.executeQuery());
-
-=======
             query = "SELECT id,name,email,date FROM users WHERE email = ? and password = ?";
             ps = con.getConnectionDB().prepareStatement(query);
             ps.setString(1, u.getUser());
             ps.setString(2, u.getPassword());
 
             return convertToJSON(ps.executeQuery());
->>>>>>> login
         }
         catch(SQLException ex) {}
         

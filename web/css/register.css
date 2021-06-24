@@ -1,3 +1,7 @@
+body{
+    background-color: #2626261f;
+}
+
 .content{
     display: flex;
     position: absolute;
@@ -90,11 +94,7 @@ button:hover{
     background-color: #FFC300;
     border: none;
     height: 3rem;
-<<<<<<< HEAD
-    width: 6rem;
-=======
     width: 6.2rem;
->>>>>>> login
     box-shadow: 6px 6px 4px #26262656;
     margin-right: 15px;
 }

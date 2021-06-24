@@ -9,37 +9,39 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/patterns.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/register.css'>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src='../../js/libraries/sjcl.js'></script>
     <script src='../../js/register.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
-<body>
-    <div class='content'>
-        <div class='left-content'>
-            <a class='mic-img' href="#"><img src='../../images/mic.png'></a>
-            <div class='title'>
-                <p>Ficamos felizes em ter você por aqui!</p>
-                <p>Complete os seus dados, por favor:</p>
+    <body>
+        <div class='content'>
+            <div class='left-content'>
+                <a class='mic-img' href="#"><img src='../../images/mic.png'></a>
+                <div class='title'>
+                    <p>Ficamos felizes em ter você por aqui!</p>
+                    <p>Complete os seus dados, por favor:</p>
+                </div>
+                <div class='form-box'>
+                    <form class='form-login' id='form-register' name='form-login' onsubmit='return validateForm()'>
+                        <input type='email' id='email' class='input-box' name='email-register' placeholder='  E-mail'>
+                        <input type='password' class='input-box' id='password-register' name='passwordregister' placeholder='  Senha'>
+                        <input type='password' class='input-box' name='ps-confirmation-register' placeholder='  Confirme a senha'>
+                        <input type='text' class='input-box' name='name-register' placeholder='  Nome completo'>
+                        <input type='text' class='input-box' name='date-register' placeholder='  Data de nascimento' onkeypress="$(this).mask('00/00/0000');">
+                        <input type='hidden' name='password-hash' id='password-hash-register'/>
+                        <div class='buttons-form'>
+                            <button class='register-button' id='reg-button'>Registrar-se</button>
+                            <a href="../login"><button type="button" class='login-button'>Logar</button></a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class='form-box'>
-                <form class='form-login' id='form-register'>
-                    <input type='email' class='input-box' name='email-register' placeholder='  E-mail'>
-                    <input type='password' class='input-box' id='password-register' name='password-register' placeholder='  Senha'>
-                    <input type='password' class='input-box' placeholder='  Confirme a senha'>
-                    <input type='text' class='input-box' name='name-register' placeholder='  Nome completo'>
-                    <input type='text' class='input-box' name='date-register' placeholder='  Data de nascimento'>
-                    <input type='hidden' name='password-hash' id='password-hash-register'/>
-                    <div class='buttons-form'>
-                        <button class='register-button' id='reg-button'>Registrar-se</button>
-                        <a href="../login"><button type="button" class='login-button'>Logar</button></a>
-                    </div>
-                </form>
+            <div class='right-content'>
+                <ul>
+                    <li><a href='../login'>Home</a></li>
+                    <li><a href='../aboutus'>Sobre nós</a></li>
+                </ul>
             </div>
         </div>
-        <div class='right-content'>
-            <ul>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Sobre nós</a></li>
-            </ul>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

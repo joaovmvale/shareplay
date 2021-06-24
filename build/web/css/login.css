@@ -1,3 +1,7 @@
+body{
+    background-color: #2626261f;
+}
+
 .content{
     display: flex;
     position: absolute;
@@ -98,7 +102,7 @@ button:hover{
 .register-button{
     font-weight: bold;
     height: 3rem;
-    width: 6rem;
+    width: 6.2rem;
     background-color: white;
     border: none;
     box-shadow: 6px 6px 4px #26262656;

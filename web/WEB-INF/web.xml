@@ -52,6 +52,10 @@
         <servlet-name>GetSubscriptionsController</servlet-name>
         <servlet-class>controller.GetSubscriptionsController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CheckLoginStatusController</servlet-name>
+        <servlet-class>controller.CheckLoginStatusController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>UserRegisterController</servlet-name>
         <url-pattern>/UserRegisterController</url-pattern>
@@ -103,5 +107,9 @@
     <servlet-mapping>
         <servlet-name>GetSubscriptionsController</servlet-name>
         <url-pattern>/GetSubscriptionsController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckLoginStatusController</servlet-name>
+        <url-pattern>/CheckLoginStatusController</url-pattern>
     </servlet-mapping>
 </web-app>

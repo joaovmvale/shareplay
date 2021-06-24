@@ -11,10 +11,8 @@
     <link rel="sortcut icon" href="/view/images/mic.png" type="image/x-icon" />
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/patterns.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/podcasts.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/shareplay_studio.css'>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="../../js/header.js"></script>
-    <script src="../../js/shareplay_studio.js"></script>
 </head>
 <body>
 
@@ -22,7 +20,7 @@
         <a class="logo" href="../home/"><img src='../../images/logo.png'></a>
         <div class="menu-options">
             <a href="../trending/">Em alta</a>
-            <a href="../user_subscriptions/">Minhas Inscrições</a>
+            <a class="user-subscriptions">Minhas Inscrições</a>
         </div>
         <div class="search-div">
             <input id="search-input" type="text" placeholder="Pesquisar">
@@ -54,36 +52,7 @@
     </header>
 
     <main> 
-        <aside>
 
-            <button class="studio-option"><i class="fas fa-broadcast-tower"></i> Iniciar transmissão</button>
-            <button class="studio-option"><i class="fas fa-compact-disc"></i> Adicionar gravação</button>
-            <button class="studio-option" id="create-podcast"><i class="far fa-plus-square"></i> Criar podcast</button>
-            <button class="studio-option" id="see-my-podcasts"><i class="fas fa-podcast"></i> Meus podcasts</button>
-        </aside>
-        <form class="studio-page create-podcast">
-            <div class="studio-page-section profile-basics">
-                <i class="fas fa-edit podcast-picture"></i>
-                <input class="podcast-name" type="text" placeholder="Nome do podcast" name="name">
-            </div>
-
-            <div class="studio-page-section profile-aditional">
-                <input class="tags" type="text" placeholder="Categoria" name="category">
-                <textarea class="about" type="text" placeholder="Sobre" name="about"></textarea>
-            </div>
-
-            <div class="studio-page-section profile-buttons">
-                <div class="buttons">
-                    <button class="confirm-profile">Confirmar</button>
-                    <button class="cancel-profile">Cancelar</button>
-                </div>
-            </div>
-            
-        </form>
-        <div class="studio-page my-podcasts">
-      
-
-        </div>
     </main>
 
 </body>

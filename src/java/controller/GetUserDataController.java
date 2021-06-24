@@ -16,8 +16,8 @@ public class GetUserDataController extends HttpServlet {
         
 
         GetUserDataDAO u = new GetUserDataDAO();
-        //String userID = (String) request.getSession().getAttribute("userID");
-        JSONArray jsonArray = u.getData("1");
+        String userID = (String) request.getSession().getAttribute("user-id");
+        JSONArray jsonArray = u.getData(userID);
         
         response.setContentType("application/json");
         response.getWriter().write(jsonArray.toString());

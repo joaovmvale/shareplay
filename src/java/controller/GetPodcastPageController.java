@@ -14,11 +14,11 @@ public class GetPodcastPageController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-         //String userID = (String) request.getSession().getAttribute("userID");
+        String userID = (String) request.getSession().getAttribute("user-id");
         
         String podcastID = request.getParameter("podcastID");
         GetPodcastPageDAO dao = new GetPodcastPageDAO();
-        JSONArray jsonArray = dao.getInformation("1", podcastID);
+        JSONArray jsonArray = dao.getInformation(userID, podcastID);
         
         response.setContentType("application/json");
         response.getWriter().write(jsonArray.toString());

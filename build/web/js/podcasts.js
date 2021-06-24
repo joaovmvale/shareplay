@@ -30,7 +30,7 @@ $(document).ready(function(){
             card +=         '<img class="podcast-img" src="../../dynamic_src/transmissions/'+ evt[0][i]["id"] + '/thumbnail.png">'
             card +=     '</div>'
             card +=     '<p class="transmission-title">' + evt[0][i]["title"] + '</p>'
-            card +=     '<a href="../podcast_page/?=' + evt[1][i]["id"] + '" class="podcast-name">' + evt[0][i]["name"] + '</a>'
+            card +=     '<a href="../podcast_page/?=' + evt[0][i]["name"] + '" class="podcast-name">' + evt[0][i]["name"] + '</a>'
             card +=     '<p class="podcast-viewers">' + handleViewers(evt[0][i]["viewers"]) + ' Assistindo</p>'
             card += '</div>'
 

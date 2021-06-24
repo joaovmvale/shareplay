@@ -1,5 +1,28 @@
 $(document).ready(function(){
 
+    
+    $(".user-subscriptions").click(function(){ 
+        checkLoginStatus();
+    })
+
+    function checkLoginStatus(){
+        let request = $.ajax({
+
+            method: "POST",
+            dataType: "json",
+            url: "../../CheckLoginStatusController"
+    
+        });
+
+        $.when(request).done(function(evt){
+            if(evt == false)
+                window.location.href = "../login/";
+            else
+                window.location.href = "../user_subscriptions/";
+            
+        })
+    }
+
     var dropdownStatus = false;
 
     if(localStorage["user"] != undefined){
@@ -30,18 +53,16 @@ $(document).ready(function(){
 
         localStorage.removeItem("user");
 
-        $.ajax({
+        let request = $.ajax({
 
             method: "POST",
             url: "../../UserDisconnectController"
     
         });
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> login
-        window.location.reload(true);
+        $.when(request).done(function(){
+            window.location.reload(true);
+        })
 
     });
 
